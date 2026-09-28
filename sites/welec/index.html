@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Welec Instal·lacions | Electricista en Valldoreix</title>
-  <meta name="description" content="Electricista en Valldoreix. Instalaciones, reformas, averías, boletines e iluminación para casas y negocios. Llama al 630 46 69 75.">
+  <title>Welec Instal·lacions | Electricista a Valldoreix i Sant Cugat</title>
+  <meta name="description" content="Electricista a Valldoreix, Sant Cugat i La Floresta. Electricitat, butlletins, carregadors Wallbox, climatització, lampisteria i telecomunicacions. Truca al 630 46 69 75.">
   <meta name="theme-color" content="#f2f3f5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#111316" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
@@ -17,8 +17,10 @@
     "@context": "https://schema.org",
     "@type": "Electrician",
     "name": "Welec Instal·lacions",
-    "url": "https://welec.es",
+    "legalName": "AVANRED S.L.",
+    "url": "https://www.welec.es",
     "telephone": "+34630466975",
+    "email": "info@welec.es",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Carrer Pau, 4",
@@ -27,6 +29,8 @@
       "addressRegion": "Barcelona",
       "addressCountry": "ES"
     },
+    "areaServed": ["Sant Cugat del Vallès", "Valldoreix", "La Floresta"],
+    "openingHours": ["Mo-Th 09:00-18:00", "Fr 09:00-14:00"],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -50,7 +54,7 @@
       --on-panel-muted: #a9afb8;
       --shadow: 0 1px 2px rgb(21 23 26 / 0.04), 0 8px 24px -12px rgb(21 23 26 / 0.12);
 
-      /* Radius rule: botones en pastilla, bloques 16px */
+      /* Radis: botons en píndola, blocs 16px */
       --r-block: 16px;
       --r-pill: 999px;
 
@@ -124,7 +128,7 @@
 
     .wrap { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
 
-    /* Botones */
+    /* Botons */
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 10px;
       min-height: 52px; padding: 0 24px;
@@ -206,13 +210,13 @@
     .panel-foot span { display: inline-flex; align-items: center; gap: 8px; }
     .panel-foot .ph { font-size: 18px; }
 
-    /* Secciones */
+    /* Seccions */
     section { padding-block: clamp(64px, 9vw, 120px); }
     .section-head { max-width: 640px; margin-bottom: clamp(36px, 5vw, 56px); }
     .section-head h2 { font-size: clamp(34px, 4.4vw, 56px); font-weight: 700; }
     .section-head p { margin-top: 16px; color: var(--muted); font-size: 18px; max-width: 52ch; }
 
-    /* Servicios: bento de 5 celdas */
+    /* Serveis: bento de 5 cel·les */
     .bento {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -240,18 +244,18 @@
     .cell-a-body { margin-top: 14px; }
     .cell-a p { color: var(--on-panel-muted); font-size: 18px; }
     .cell-a .ico { background: var(--accent); color: var(--on-accent); width: 56px; height: 56px; font-size: 30px; }
-    .cell-a ul { list-style: none; padding: 0; margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
-    .cell-a li {
-      border: 1px solid rgb(255 255 255 / 0.16); border-radius: var(--r-pill);
-      padding: 6px 14px; font-size: 15px; color: var(--on-panel);
-    }
+    .chips { list-style: none; padding: 0; margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .chips li { border: 1px solid var(--line); border-radius: var(--r-pill); padding: 5px 13px; font-size: 14px; }
+    .cell-a .chips { margin-top: 20px; }
+    .cell-a .chips li { border-color: rgb(255 255 255 / 0.16); color: var(--on-panel); font-size: 15px; padding: 6px 14px; }
+    .cell-e .chips li { border-color: rgb(21 23 26 / 0.14); }
     .cell-b { grid-column: 5 / 7; grid-row: 1; }
     .cell-c { grid-column: 5 / 7; grid-row: 2; }
     .cell-d { grid-column: 1 / 4; grid-row: 3; }
     .cell-e { grid-column: 4 / 7; grid-row: 3; background: var(--accent-soft); border-color: transparent; }
     .cell-e .ico { background: var(--accent); color: var(--on-accent); }
 
-    /* Cómo trabajamos */
+    /* Com treballem */
     .how { border-top: 1px solid var(--line); }
     .flow {
       display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -265,7 +269,7 @@
     .flow h3 { margin-top: 18px; font-size: 24px; font-weight: 600; }
     .flow p { margin-top: 10px; color: var(--muted); max-width: 34ch; }
 
-    /* Contacto */
+    /* Contacte */
     .contact { background: var(--panel); color: var(--on-panel); }
     .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 5vw, 72px); align-items: stretch; }
     .contact h2 { font-size: clamp(36px, 4.8vw, 64px); font-weight: 700; letter-spacing: -0.035em; }
@@ -303,7 +307,7 @@
     .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
     .foot a { text-underline-offset: 3px; }
 
-    /* Barra fija de llamada en móvil */
+    /* Barra fixa per trucar al mòbil */
     .callbar {
       display: none;
       position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
@@ -314,7 +318,7 @@
     }
     .callbar .btn { width: 100%; }
 
-    /* Aparición suave */
+    /* Aparició suau */
     .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
     .reveal.is-in { opacity: 1; transform: none; }
     .no-js .reveal { opacity: 1; transform: none; }
@@ -350,175 +354,173 @@
   </style>
 </head>
 <body class="no-js">
-  <a class="skip" href="#main">Saltar al contenido</a>
+  <a class="skip" href="#main">Salta al contingut</a>
 
   <header class="nav" id="top">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top" translate="no" aria-label="Welec Instal·lacions, inicio">
+      <a class="brand" href="#top" translate="no" aria-label="Welec Instal·lacions, inici">
         <span class="brand-mark" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L45.19,143.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.69,7L153.18,90.9l57.63,21.61a8,8,0,0,1,3,12.95Z"/></svg></span>
         <span>Welec <small>Instal·lacions</small></span>
       </a>
       <nav class="nav-links" aria-label="Principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#como-trabajamos">Cómo trabajamos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#serveis">Serveis</a>
+        <a href="#com-treballem">Com treballem</a>
+        <a href="#contacte">Contacte</a>
         <a class="btn btn-primary btn-sm" href="tel:+34630466975">
-          <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Llamar
+          <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Trucar
         </a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
+    <!-- Portada -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1 id="hero-title">Tu electricista en <em>Valldoreix</em>.</h1>
-          <p class="hero-sub">Instalaciones, reformas y averías eléctricas para casas y negocios de Valldoreix y Sant&nbsp;Cugat.</p>
+          <h1 id="hero-title">El teu electricista a <em>Valldoreix</em>.</h1>
+          <p class="hero-sub">Instal·lacions, reformes i avaries per a cases i negocis de Sant&nbsp;Cugat, Valldoreix i La&nbsp;Floresta.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="tel:+34630466975">
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Llamar al 630&nbsp;46&nbsp;69&nbsp;75
+              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Trucar al 630&nbsp;46&nbsp;69&nbsp;75
             </a>
-            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+            <a class="btn btn-ghost" href="#serveis">Veure serveis</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Valoración en Google">
+        <aside class="hero-panel" aria-label="Valoració a Google">
           <svg class="ph bolt" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L45.19,143.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.69,7L153.18,90.9l57.63,21.61a8,8,0,0,1,3,12.95Z"/></svg>
           <div>
             <div class="rating-num">5,0</div>
-            <div class="stars" role="img" aria-label="5 de 5 estrellas">
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg>
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg>
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg>
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg>
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg>
+            <div class="stars" role="img" aria-label="5 de 5 estrelles">
+              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg>
             </div>
-            <p class="rating-label">6 reseñas en Google, todas de 5 estrellas.</p>
+            <p class="rating-label">6 ressenyes a Google, totes de 5 estrelles.</p>
           </div>
           <div class="panel-foot">
             <span><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg>Carrer Pau, 4, Valldoreix</span>
-            <a href="https://www.google.com/maps/search/?api=1&query=Welec+Instal%C2%B7lacions+Valldoreix" target="_blank" rel="noopener">Leer las reseñas</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Welec+Instal%C2%B7lacions+Valldoreix" target="_blank" rel="noopener">Llegir les ressenyes</a>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" aria-labelledby="servicios-title">
+    <!-- Serveis -->
+    <section id="serveis" aria-labelledby="serveis-title">
       <div class="wrap">
         <div class="section-head reveal">
-          <h2 id="servicios-title">Lo que hacemos</h2>
-          <p>Trabajos eléctricos de cualquier tamaño, desde cambiar un enchufe hasta la instalación completa de una casa.</p>
+          <h2 id="serveis-title">Què fem</h2>
+          <p>Electricitat, climatització, aigua i telecomunicacions per a cases i negocis.</p>
         </div>
 
         <div class="bento">
           <article class="cell cell-a reveal">
-            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"/></svg></span>
+            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></svg></span>
             <div>
-              <h3>Instalaciones y reformas</h3>
-              <p class="cell-a-body">Instalación eléctrica nueva o renovada para viviendas, cocinas, baños y locales, adaptada a la normativa vigente.</p>
-              <ul aria-label="Incluye">
-                <li>Cuadros eléctricos</li>
-                <li>Cableado y puntos de luz</li>
-                <li>Enchufes y mecanismos</li>
-                <li>Tomas de tierra</li>
-              </ul>
+              <h3>Electricitat</h3>
+              <p class="cell-a-body">Instal·lacions elèctriques noves i reformes, reparació d’avaries i tots els tràmits perquè la instal·lació quedi legalitzada.</p>
+              <ul class="chips" aria-label="Inclou"><li>Instal·lacions i reformes</li><li>Avaries</li><li>Butlletins i certificats</li></ul>
             </div>
           </article>
 
           <article class="cell cell-b reveal">
-            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></svg></span>
-            <h3>Averías</h3>
-            <p>Saltos del diferencial, cortes de luz y enchufes que no funcionan. Buscamos el origen y lo reparamos.</p>
+            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M134.62,123.51a8,8,0,0,1,.81,7.46l-16,40A8,8,0,0,1,104.57,165l11.61-29H96a8,8,0,0,1-7.43-11l16-40A8,8,0,1,1,119.43,91l-11.61,29H128A8,8,0,0,1,134.62,123.51ZM248,86.63V168a24,24,0,0,1-48,0V128a8,8,0,0,0-8-8H176v88h16a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H48V56A24,24,0,0,1,72,32h80a24,24,0,0,1,24,24v48h16a24,24,0,0,1,24,24v40a8,8,0,0,0,16,0V86.63A8,8,0,0,0,229.66,81L210.34,61.66a8,8,0,0,1,11.32-11.32L241,69.66A23.85,23.85,0,0,1,248,86.63ZM160,208V56a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8V208Z"/></svg></span>
+            <h3>Carregadors Wallbox</h3>
+            <p>Punt de recàrrega per al cotxe elèctric al teu garatge o plaça d’aparcament.</p>
           </article>
 
           <article class="cell cell-c reveal">
-            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,136a8,8,0,0,1-8,8H72a8,8,0,0,1,0-16h48A8,8,0,0,1,128,136Zm-8-40H72a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm112,65.47V224A8,8,0,0,1,220,231l-24-13.74L172,231A8,8,0,0,1,160,224V200H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216a16,16,0,0,1,16,16V86.53a51.88,51.88,0,0,1,0,74.94ZM160,184V161.47A52,52,0,0,1,216,76V56H40V184Zm56-12a51.88,51.88,0,0,1-40,0v38.22l16-9.16a8,8,0,0,1,7.94,0l16,9.16Zm16-48a36,36,0,1,0-36,36A36,36,0,0,0,232,124Z"/></svg></span>
-            <h3>Boletines y certificados</h3>
-            <p>Certificado de instalación eléctrica para dar de alta la luz o subir la potencia contratada.</p>
+            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></svg></span>
+            <h3>Lampisteria i aigua</h3>
+            <p>Instal·lacions d’aigua i equips de tractament per a casa.</p>
+            <ul class="chips" aria-label="Inclou"><li>Descalcificadors</li><li>Osmosi</li><li>Aigua d’hidrogen</li></ul>
           </article>
 
           <article class="cell cell-d reveal">
-            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z"/></svg></span>
-            <h3>Iluminación</h3>
-            <p>Cambio a LED, iluminación de jardín y exterior, y luces con sensor de movimiento.</p>
+            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M223.77,150.09a8,8,0,0,1-5.86,9.68l-24.64,6,6.46,24.11a8,8,0,0,1-5.66,9.8A8.25,8.25,0,0,1,192,200a8,8,0,0,1-7.72-5.93l-7.72-28.8L136,141.86v46.83l21.66,21.65a8,8,0,0,1-11.32,11.32L128,203.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L120,188.69V141.86L79.45,165.27l-7.72,28.8A8,8,0,0,1,64,200a8.25,8.25,0,0,1-2.08-.27,8,8,0,0,1-5.66-9.8l6.46-24.11-24.64-6a8,8,0,0,1,3.82-15.54l29.45,7.23L112,128,71.36,104.54l-29.45,7.23A7.85,7.85,0,0,1,40,112a8,8,0,0,1-1.91-15.77l24.64-6L56.27,66.07a8,8,0,0,1,15.46-4.14l7.72,28.8L120,114.14V67.31L98.34,45.66a8,8,0,0,1,11.32-11.32L128,52.69l18.34-18.35a8,8,0,0,1,11.32,11.32L136,67.31v46.83l40.55-23.41,7.72-28.8a8,8,0,0,1,15.46,4.14l-6.46,24.11,24.64,6A8,8,0,0,1,216,112a7.85,7.85,0,0,1-1.91-.23l-29.45-7.23L144,128l40.64,23.46,29.45-7.23A8,8,0,0,1,223.77,150.09Z"/></svg></span>
+            <h3>Climatització</h3>
+            <p>Fred i calor eficients, amb els certificats RITE de les instal·lacions tèrmiques.</p>
+            <ul class="chips" aria-label="Inclou"><li>Aire condicionat</li><li>Aerotèrmia</li><li>Sostres radiants</li><li>Recuperadors de calor</li></ul>
           </article>
 
           <article class="cell cell-e reveal">
-            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M134.62,123.51a8,8,0,0,1,.81,7.46l-16,40A8,8,0,0,1,104.57,165l11.61-29H96a8,8,0,0,1-7.43-11l16-40A8,8,0,1,1,119.43,91l-11.61,29H128A8,8,0,0,1,134.62,123.51ZM248,86.63V168a24,24,0,0,1-48,0V128a8,8,0,0,0-8-8H176v88h16a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H48V56A24,24,0,0,1,72,32h80a24,24,0,0,1,24,24v48h16a24,24,0,0,1,24,24v40a8,8,0,0,0,16,0V86.63A8,8,0,0,0,229.66,81L210.34,61.66a8,8,0,0,1,11.32-11.32L241,69.66A23.85,23.85,0,0,1,248,86.63ZM160,208V56a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8V208Z"/></svg></span>
-            <h3>Recarga de coche eléctrico</h3>
-            <p>Instalación del punto de recarga en tu garaje o plaza de parking.</p>
+            <span class="ico" aria-hidden="true"><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M140,204a12,12,0,1,1-12-12A12,12,0,0,1,140,204ZM237.08,87A172,172,0,0,0,18.92,87,8,8,0,0,0,29.08,99.37a156,156,0,0,1,197.84,0A8,8,0,0,0,237.08,87ZM205,122.77a124,124,0,0,0-153.94,0A8,8,0,0,0,61,135.31a108,108,0,0,1,134.06,0,8,8,0,0,0,11.24-1.3A8,8,0,0,0,205,122.77Zm-32.26,35.76a76.05,76.05,0,0,0-89.42,0,8,8,0,0,0,9.42,12.94,60,60,0,0,1,70.58,0,8,8,0,1,0,9.42-12.94Z"/></svg></span>
+            <h3>Telecomunicacions</h3>
+            <p>Connexió, seguretat i comunicació a casa o a l’oficina.</p>
+            <ul class="chips" aria-label="Inclou"><li>Xarxes informàtiques</li><li>Wifi</li><li>Càmeres de videovigilància</li><li>Porters i videoporters</li><li>Antenes de TV</li></ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Cómo trabajamos -->
-    <section id="como-trabajamos" class="how" aria-labelledby="how-title">
+    <!-- Com treballem -->
+    <section id="com-treballem" class="how" aria-labelledby="how-title">
       <div class="wrap">
         <div class="section-head reveal">
-          <h2 id="how-title">Así de sencillo</h2>
+          <h2 id="how-title">Així de senzill</h2>
         </div>
         <ol class="flow">
           <li class="reveal">
             <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M144.27,45.93a8,8,0,0,1,9.8-5.66,86.22,86.22,0,0,1,61.66,61.66,8,8,0,0,1-5.66,9.8A8.23,8.23,0,0,1,208,112a8,8,0,0,1-7.73-5.94,70.35,70.35,0,0,0-50.33-50.33A8,8,0,0,1,144.27,45.93Zm-2.33,41.8c13.79,3.68,22.65,12.54,26.33,26.33A8,8,0,0,0,176,120a8.23,8.23,0,0,0,2.07-.27,8,8,0,0,0,5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8,8,0,1,0-4.13,15.46Zm81.94,95.35A56.26,56.26,0,0,1,168,232C88.6,232,24,167.4,24,88A56.26,56.26,0,0,1,72.92,32.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,109.39,104c-.18.27-.37.52-.57.77L88,129.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,223.88,183.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a8.44,8.44,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L96,95.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,40,88,128.14,128.14,0,0,0,168,216,40.21,40.21,0,0,0,208,181.07Z"/></svg>
-            <h3>Nos llamas</h3>
-            <p>Nos cuentas qué necesitas. Si es una avería, te decimos cuándo podemos pasar.</p>
+            <h3>Ens truques</h3>
+            <p>Ens expliques què necessites. Si és una avaria, et diem quan hi podem passar.</p>
           </li>
           <li class="reveal">
             <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
-            <h3>Lo revisamos</h3>
-            <p>Vamos a tu casa o local, miramos la instalación y te explicamos las opciones.</p>
+            <h3>Ho revisem</h3>
+            <p>Venim a casa teva o al teu local, mirem la instal·lació i t’expliquem les opcions.</p>
           </li>
           <li class="reveal">
             <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg>
-            <h3>Lo dejamos listo</h3>
-            <p>Presupuesto antes de empezar y el trabajo terminado y limpio.</p>
+            <h3>Ho deixem enllestit</h3>
+            <p>Pressupost abans de començar i la feina acabada i neta.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact" aria-labelledby="contacto-title">
+    <!-- Contacte -->
+    <section id="contacte" class="contact" aria-labelledby="contacte-title">
       <div class="wrap contact-grid">
         <div class="reveal">
-          <h2 id="contacto-title">¿Hablamos?</h2>
-          <p class="lead">Llámanos y cuéntanos qué necesitas. Estamos en el centro de Valldoreix.</p>
+          <h2 id="contacte-title">Parlem?</h2>
+          <p class="lead">Truca’ns o escriu-nos i explica’ns què necessites. Som al centre de Valldoreix.</p>
           <a class="phone-big" href="tel:+34630466975">630&nbsp;46&nbsp;69&nbsp;75</a>
 
           <dl class="details">
             <div>
-              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span class="sr-only">Dirección</span></dt>
-              <dd>Carrer Pau, 4<small>08197 Valldoreix, Barcelona</small></dd>
+              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg><span class="sr-only">Horari</span></dt>
+              <dd>Dilluns a dijous, 9:00-18:00<small>Divendres, 9:00-14:00</small></dd>
             </div>
             <div>
-              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm88,104a87.61,87.61,0,0,1-3.33,24H174.16a157.44,157.44,0,0,0,0-48h38.51A87.61,87.61,0,0,1,216,128ZM102,168H154a115.11,115.11,0,0,1-26,45A115.27,115.27,0,0,1,102,168Zm-3.9-16a140.84,140.84,0,0,1,0-48h59.88a140.84,140.84,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.84a157.44,157.44,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154,88H102a115.11,115.11,0,0,1,26-45A115.27,115.27,0,0,1,154,88Zm52.33,0H170.71a135.28,135.28,0,0,0-22.3-45.6A88.29,88.29,0,0,1,206.37,88ZM107.59,42.4A135.28,135.28,0,0,0,85.29,88H49.63A88.29,88.29,0,0,1,107.59,42.4ZM49.63,168H85.29a135.28,135.28,0,0,0,22.3,45.6A88.29,88.29,0,0,1,49.63,168Zm98.78,45.6a135.28,135.28,0,0,0,22.3-45.6h35.66A88.29,88.29,0,0,1,148.41,213.6Z"/></svg><span class="sr-only">Web</span></dt>
-              <dd><a href="https://welec.es" target="_blank" rel="noopener" translate="no">welec.es</a></dd>
+              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg><span class="sr-only">Correu</span></dt>
+              <dd><a href="mailto:info@welec.es" translate="no">info@welec.es</a></dd>
             </div>
             <div>
-              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"/></svg><span class="sr-only">Comunidad</span></dt>
-              <dd>Espacio amigable con la comunidad LGBTQ+</dd>
+              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span class="sr-only">Adreça</span></dt>
+              <dd>Carrer Pau, 4<small>08197 Valldoreix, Sant Cugat del Vallès</small></dd>
+            </div>
+            <div>
+              <dt><svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"/></svg><span class="sr-only">Comunitat</span></dt>
+              <dd>Espai amigable amb la comunitat LGBTQ+</dd>
             </div>
           </dl>
 
           <div class="contact-cta">
             <a class="btn btn-primary" href="tel:+34630466975">
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Llamar
+              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Trucar
             </a>
             <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Pau+4%2C+08197+Valldoreix%2C+Barcelona" target="_blank" rel="noopener">
-              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z"/></svg>Cómo llegar
+              <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z"/></svg>Com arribar
             </a>
           </div>
         </div>
 
         <div class="map reveal">
-          <p class="map-fallback">Carrer Pau, 4, 08197 Valldoreix<br><a href="https://www.google.com/maps/search/?api=1&query=Carrer+Pau+4%2C+08197+Valldoreix" target="_blank" rel="noopener">Abrir en Google Maps</a></p>
+          <p class="map-fallback">Carrer Pau, 4, 08197 Valldoreix<br><a href="https://www.google.com/maps/search/?api=1&query=Carrer+Pau+4%2C+08197+Valldoreix" target="_blank" rel="noopener">Obrir a Google Maps</a></p>
           <iframe
             title="Mapa: Carrer Pau, 4, Valldoreix"
-            src="https://maps.google.com/maps?q=Carrer%20Pau%204%2C%2008197%20Valldoreix%2C%20Barcelona&z=16&output=embed"
+            src="https://maps.google.com/maps?q=Carrer%20Pau%204%2C%2008197%20Valldoreix%2C%20Barcelona&z=16&hl=ca&output=embed"
             width="600" height="440"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -529,14 +531,14 @@
 
   <footer>
     <div class="wrap foot">
-      <span><span translate="no">Welec Instal·lacions</span>. Electricista en Valldoreix.</span>
+      <span><span translate="no">Welec Instal·lacions</span> (AVANRED S.L.). Electricista a Sant Cugat, Valldoreix i La Floresta.</span>
       <span>Carrer Pau, 4, 08197 Valldoreix · <a href="tel:+34630466975">630&nbsp;46&nbsp;69&nbsp;75</a></span>
     </div>
   </footer>
 
   <div class="callbar">
     <a class="btn btn-primary" href="tel:+34630466975">
-      <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Llamar al 630&nbsp;46&nbsp;69&nbsp;75
+      <svg class="ph" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Trucar al 630&nbsp;46&nbsp;69&nbsp;75
     </a>
   </div>
 
